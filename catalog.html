@@ -31,7 +31,100 @@
                 <section class="filters">
                     <h2 class="visually-hidden">Фильтр гостиниц</h2>
                     <form class="form-filters" method="GET">
-                        <div class="filter-column"></div>
+                        <div class="filter-column">
+                        <fieldset>
+                            <legend>Инфраструктура</legend>
+                            <ul class="filter-list">
+                                <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="pool" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Бассейн
+                                    </label>
+                                </li>
+                                <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="parcking">
+                                        <span class="checkbox-indicator"></span>
+                                        Парковка
+                                    </label>
+                                </li>
+                                <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="wifi">
+                                        <span class="checkbox-indicator"></span>
+                                        Wi-Fi
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Тип жилья:</legend>
+                                <ul class="filter-list">
+                                    <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="item" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Гостиница
+                                    </label>
+                                </li>
+                                <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="motel" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Мотель
+                                    </label>
+                                </li>
+                                <li class="filter-option">
+                                    <label class="login-checkbox">
+                                        <input type="checkbox" class="visually-hidden" name="aparment" checked>
+                                        <span class="checkbox-indicator"></span>
+                                        Апартаменты
+                                    </label>
+                                </li>
+                                </ul>
+                            
+                        </fieldset>
+                    </div>
+                    <section class="sorting">
+                        <h2 class="visually-hidden">Сортировка выбранных гостиниц</h2>
+                        <div class="sorting-column">
+                            <b>Найдено: 3</b>
+                        </div>
+                        <div class="sorting-column">
+                            <p>Сортировка:</p>
+                                <ul>
+                                    <li><a href="#" class="sorting-link" current>По цене</a></li>
+                                    <li><a href="#" class="sorting-link">По типу</a></li>
+                                    <li><a href="#" class="sorting-link">По рейтингу</a></li>
+                                </ul>    
+                        </div>
+                        <div class="sorting-column arrows">
+                            <a href="#" class="arrow-up"><span class="visually-hidden">Вверх</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+                            <a href="#" class="arrow-down current"><span class="visually-hidden">Вниз</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>
+                        </div>
+                    </section>
+                    <section class="item-list">
+                        <h2 class="visually-hidden">Подходящие отели</h2>
+                        <ul>
+                            <li class="item">
+                                <img class ="item-img" src="img/amara.jpg" alt="Amara Resort & Spa" width="135px" height="90px">
+                                <div class="item-block">
+                                    <div class="info">
+                                        <a href="/amara" class="item-name"><b>Amara Resort & Spa</b></a>
+                                        <div class="item-row">
+                                            <p class="item-type">Гостиница</p>
+                                            <p class="item-price">От 4000 Р.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
                     </form>
                 </section>
             </div>
