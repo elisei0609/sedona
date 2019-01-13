@@ -13,7 +13,7 @@ body {
   
   img {
     max-width: 100%;
-    height: auto;
+    
   }
   
   a { 
@@ -399,6 +399,11 @@ input::placeholder{
     font-weight: bold;
     text-transform: uppercase;
 }
+.price-controls input::placeholder {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 14px;
+}
 button[name="number-plus"]:hover::before,
 button[name="number-plus"]:hover::after,
 button[name="number-plus"]:focus::before,
@@ -422,8 +427,8 @@ button[name="number-minus"]:active::before{
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 70px;
-    padding-left: 135px;
+    margin-top: 42px;
+    padding-left: 132px;
     display: flex;
 }
 .footer-social {
@@ -467,12 +472,11 @@ button[name="number-minus"]:active::before{
     flex-wrap: wrap;
     align-items: center;
     width: 154px;
-    padding-top: 36px;
     margin: 0;
 }
 .footer-center {
     display: flex;
-    margin-left: 220px
+    margin-left: 213px
 }
 .footer-right {
     color: #000000;
@@ -480,7 +484,7 @@ button[name="number-minus"]:active::before{
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 65px;
+    margin-top: 42px;
     margin-left: 220px;
     display: flex;
 
@@ -491,6 +495,13 @@ button[name="number-minus"]:active::before{
     margin: 0;
     height: 120px;
 }
+
+
+/*Разметка страницы каталога*/
+
+.inner main {
+    text-align: left;
+}
 .wrapper-inner {
     background-image: url(../img/background-inner.jpg);
     background-repeat: no-repeat;
@@ -498,3 +509,322 @@ button[name="number-minus"]:active::before{
     width: 100%;
 
 }
+.form-filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 71px;
+    padding-top: 26px;
+    padding-right: 70px;
+    padding-bottom: 0px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+}
+.filter-list {
+    width: 230px;
+    padding: 0;
+    margin: 0;
+    padding-top: 9px;
+}
+.checkbox-indicator {
+    
+}
+.filter-list li {
+    padding: 12px;
+    padding-left: 37px;
+}
+.filters fieldset {
+    border: none;
+}
+.filters legend{
+    display: block;
+    margin-top:10px;
+
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .login-checkbox {
+      position: relative;
+  }
+  .login-checkbox input[type="checkbox"] + .checkbox-indicator {
+      position: absolute;
+      top: 0;
+      left: -39px;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/checkbox-off.svg");
+      background-repeat: no-repeat;
+  }
+  .login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+  }
+
+  .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator{
+    width: 27px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+  }
+
+  .login-checkbox input[type="checkbox"]:disabled + .checkbox-indicator{
+    width: 27px;
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  .login-checkbox input[type="checkbox"]:disabled:checked + .checkbox-indicator{
+    width: 27px;
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+  .filter-option {
+      position: relative;
+  }
+  .filters li {
+      list-style: none;
+  }
+  .filter-column {
+      display: flex;
+      justify-content: space-between;
+      
+  }
+  .filter-range-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+  }
+  .filter-range {
+      margin-right: -8px;
+      margin-top: -2px;
+  }
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+    padding-top: 7px;
+
+    color: inherit;
+    font: inherit;
+
+    background: none;
+    border: none;
+  }
+  .price-controls {
+    position: relative;  
+    width: 315px;
+    height: 33px;
+    margin-bottom: 19px;
+    margin-top: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  .price-controls::after {
+      content: "";
+      position: absolute;
+      top: 13%;
+      left: 50%;
+      width: 2px;
+      height: 23px;
+      background-color: #ffffff;
+  }
+  .min-price {
+      padding-left: 64px;
+  }
+  .max-price {
+      padding-left: 73px;
+  }
+  .bar {
+      width: 80%;
+      height: 2px;
+      background: #ffffff;
+  }
+  .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+
+    width: 4px;
+    height: 4px;
+
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  .range-toggle-min {
+    left: 0;
+  }
+
+  .range-toggle-max {
+    left: 79%;
+  }
+  .range-controls {
+      position: relative;
+  }
+  .btn-transparent {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: inherit;
+    width: 134px;
+    height: 34px;
+    margin-top: 33px;
+    margin-left: 85px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .sorting-column-title {
+    display: flex;
+    margin-top: 28px;
+    font-size: 21px;
+    line-height: 26px;
+    margin-left: 80px;
+  }
+  .sorting-column {
+    display: flex;
+    margin-top: 21px;
+    margin-left: 48px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .sorting-column ul {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+  }
+  .sorting-column p {
+      display: flex;
+  }
+  .sorting {
+      display: flex;
+      height: 86px;
+      position: relative;
+  }
+  .arrow-down.current {
+    padding-left: 10px;
+    
+ }
+  .sorting-column.arrows {
+    position: absolute;
+    top: 13px;
+    right: 70px;
+    width: 28px;
+  }
+  .sorting-column .current path{
+      fill:#81b3d2;
+    }
+    .arrow-up path {
+        fill: rgb(202, 202, 202);
+    }
+    
+    .sorting-link {
+        opacity: 0.3;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        outline: none;
+    }
+    
+    .sorting-link:hover,
+    .sorting-link:focus {
+        color: #81b3d2;
+        opacity: 1;
+    }
+    .sorting-link:active{
+        color: #000000;
+        text-decoration: none;
+      }
+      .sorting-link.current {
+        color: #81b3d2;
+        text-decoration: none;
+        opacity: 1;
+    }
+    .item-list ul {
+        margin: 0;
+    }
+    li.item {
+        display: flex;
+        height: 150px;
+        border-top: 1px solid #f2f2f2;
+        position: relative;
+    }
+    .item-img {
+        padding-top: 27px;
+        padding-left: 33px;
+        margin-right: 27px;
+    }
+    .item-block {
+        display: flex;
+        width: 300px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .info {
+        padding-top: 22px;
+    }
+    .item-name {
+        font-size: 21px;
+        line-height: 26px;
+        
+    }
+    .item.last {
+        border-bottom: 1px solid #f2f2f2;
+    }
+    .item-row {
+        display: flex;
+        justify-content: space-between;
+        width: 190px;
+    }
+    .item-type {
+        margin-top: 8px;
+    }
+    .item-price {
+        margin-top: 8px;
+    }
+    .item-stars {
+        margin-bottom: 40px;
+    }
+    .stars {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        justify-content: flex-end;
+    }
+    .stars li {
+        padding: 0 0 0 6px;
+    }
+    .rating {
+        position: absolute;
+        top: 27px;
+        right: 73px;
+    }
+    .item-racing {
+        background-color: #f2f2f2;
+        color: #666666;
+        margin-left: 32px;
+        text-align: center;
+        padding: 3px 0 3px 0;
+        width: 120px;
+    }
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        width: 260px;
+    }
+    .btn-more {
+        background-color: #81b3d2;
+        padding: 3px 17px 1px 17px;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .btn-book {
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #766357;
+        padding: 3px 17px 1px 17px;
+    }

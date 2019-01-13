@@ -91,10 +91,10 @@
                     <div class="filter-range">
                         <div class="filter-range-title">Стоимость в сутки (р):</div>
                         <div class="price-controls">
-                            <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                            <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                            <label class="min-price">от <input type="text" name="min-price" value placeholder="0"></label>
+                            <label class="max-price">до <input type="text" name="max-price" value placeholder="3000"></label>
                         </div>
-                        <div class="rage-controls">
+                        <div class="range-controls">
                             <div class="scale">
                                 <div class="bar"></div>
                             </div>
@@ -109,17 +109,18 @@
 
                     <section class="sorting">
                         <h2 class="visually-hidden">Сортировка выбранных гостиниц</h2>
-                        <div class="sorting-column">
+                        <div class="sorting-column-title">
                             <b>Найдено: 3</b>
                         </div>
                         <div class="sorting-column">
                             <p>Сортировка:</p>
                                 <ul>
-                                    <li><a href="#" class="sorting-link" current>По цене</a></li>
+                                    <li><a href="#" class="sorting-link current">По цене</a></li>
                                     <li><a href="#" class="sorting-link">По типу</a></li>
                                     <li><a href="#" class="sorting-link">По рейтингу</a></li>
                                 </ul>    
                         </div>
+                    
                         <div class="sorting-column arrows">
                             <a href="#" class="arrow-up"><span class="visually-hidden">Вверх</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
@@ -159,7 +160,7 @@
                                 </div>
                             </li>
                             <li class="item">
-                                <img src="img/desert qual.jpg" width="135" height="90" alt="Desert Qual Inn">
+                                <img class ="item-img" src="img/desert qual.jpg" width="135" height="90" alt="Desert Qual Inn">
                                 <div class="item-block">
                                     <div class="info">
                                         <a href="/desert" class="item-name"><b>Desert Qual Inn</b></a>
@@ -185,13 +186,13 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="item">
-                                <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+                            <li class="item last">
+                                <img class ="item-img" src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
                                 <div class="item-block">
                                     <div class="info">
                                         <a href="/villas" class="item-name"><b>Villas at Poco Diablo</b></a>
                                         <div class="item-row">
-                                            <p class="item-type">Мотель</p>
+                                            <p class="item-type">Апартаменты</p>
                                             <p class="item-price">От 2000 Р.</p>
                                         </div>
                                     </div>
